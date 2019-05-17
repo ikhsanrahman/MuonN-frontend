@@ -69,51 +69,34 @@ header{
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: none;
+	background-color: transparent;
 	padding: 25px 0;
 	z-index: 99;
-
 }
 
-.muonn{
-	float: left;
-	/* padding-bottom: 5px; */
-	margin: -10px 0 0 50px;
-	font-weight: bold;
-	font-size: 30px;
-	/* text-transform: uppercase; */
+.collapse{
+	position: relative;
+	/* left: 0%; */
 }
 
-.muonn span{
-	color: crimson
-}
-
-
-header ul li{
-	float: right;
-	/* padding: 5px 0 5px; */
-	padding-left: 0;
-	margin-right: 40px;
-	font-weight: bold;
-	/* background-color: red; */
+.nav-link{
+	word-spacing: 60px;
+	font-size: 17px;
+	font-family: roboto;
+	color: white;
+	padding: 0 20px 0 20px;
+	margin:  0 20px 0 20px;
 }
 
 
-
-header ul li a{
-	color: rgb(233, 233, 240);
-	text-transform: uppercase;
-	text-decoration: none;
-	margin: 0 40px;
-	visibility: hidden;
-	font-size: 15px;
-}
 
 .fixed {
-	height: 10%;
+	height: 20%;
 	position: fixed;
-	top: 0;
-	left: 0;
+	/* top: 0;
+	left: 0; */
+	width: 100%;
 	background-color: black;
 	/* z-index: 99; */
 	opacity: 0.5
@@ -123,7 +106,6 @@ section{
 	padding: 20px 0;
 	height: 100%;
 	position: relative;
-	/* background-color: red; */
 }
 
 .home{
@@ -137,7 +119,6 @@ section{
 	background-position: center;
 	background-color: #34495e;
 	background-attachment: fixed;
-	/* z-index: 9; */
 }
 
 .home .app{
@@ -156,7 +137,6 @@ section{
 }
 
 .home .app h2{
-	/* background-color: blue; */
 	width: 100%;
 	font-size: 20px;
 	font-weight: bold;
@@ -168,7 +148,6 @@ section{
 }
 
 .home .app h3{
-	/* background-color: blue; */
 	width: 100%;
 	margin-top: 2%;
 	font-size: 20px;
@@ -192,13 +171,9 @@ section{
 	border-radius: 30px ;
 	border: 1px solid black;
 	font-family: CrimsonText;
-	/* position: relative; */
-	/* top: 10px;
-	left: 20px; */
 	height: 20%;
 	width: 50%;
 	text-align: center;
-	/* padding: 5px 0 20px 0 ; */
 	
 
 }
@@ -211,7 +186,6 @@ section{
 
 .name h1{
 	font-size: 68px;
-	/* text-transform: uppercase; */
 	text-shadow: 0 15px 20px #000000b0;
 	text-align: center;
 	margin-bottom: 0;
@@ -250,14 +224,12 @@ section{
 	font-size: 25px;
 	text-align: center;
 	width: 60%;
-
 	letter-spacing: 3px;
 }
 
 
 .about{
 	width: auto;
-	/* background-color: red; */
 	margin-bottom: 0;
 	height: 70%;
 	
@@ -266,7 +238,6 @@ section{
 .about-info{
 	width: 90%;
 	display: flex;
-	/* background-color: green; */
 	position: relative;
 	left: 20px;
 	top: 40px;
@@ -279,17 +250,13 @@ section{
 
 .gambar img{
 	padding: 20px 0px 10px 0;
-	/* margin-right: 50px; */
-	/* margin-left: 0; */
 	width: 90%;
 	height: 80%;
 
 }
 .about .about-info .content-about{
 	float: left;
-	/* background-color: blue; */
 	margin: 0 10px 0 20px;
-	/* padding-right: 0; */
 	padding-top: 10px;
 }
 
@@ -297,108 +264,90 @@ section{
 	line-height: 45px;
 }
 
-
-
-/* .content-about p{
-	line-height: 18px;
-	font-size: 20px;
-	margin: 10px;
-	/* text-align: justify; */
-} */
-
-
-
-.service{
-	/* width: 60%; */
-	/* margin: 0 auto;
-	padding: 30px 0; */
+.service-title{
 	text-align: center;
-	/* z-index: 99; */
-	/* background-color: rgb(24, 187, 9); */
-}
-
-.service .service-title{
-	/* margin: 10px; */
-	text-align: center;
-	/* padding: 30px; */
 	font-size: 30px;
 	width: 30%;
-	/* background: red; */
 	position: relative;
 	left: 35%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: rgb(196, 137, 10);
-	/* border-bottom: 1px solid blue; */
 }
 
-.service .info-1{
-	position: relative;
-	/* top: 50%; */
-	margin: 5% 0 0 7% ;
-	/* background: red; */
-}
-.service ul{
-	position: relative;
-	/* top: 50%; */
-	text-align : center;
-	/* margin: 5% 0 0 7% ; */
-	/* background: red; */
+.info-1 .info-1-1{
+	height: 90%;	
 }
 
-
-.service .info-1 .info-1-1{
-	height: 90%;
-}
-.service .info-1 .info-1-1 a{
+.info-1 .info-1-1 a{
 	margin: 2% 2% 0 0;
+	position: relative;
+	z-index: 99;
+	cursor: pointer;
+	
 }
-.service .info-1 .info-1-2{
+.info-1 .info-1-1 h6{
+	position: relative;
+	font-size: 15px;
+}
+.info-1 .info-1-2{
 	height: 90%;
+	z-index: 10;
 }
-.service .info-1 .info-1-2 a{
+.info-1 .info-1-2 a{
 	margin: 20% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
 }
-.service .info-1 .info-1-3{
+.info-1 .info-1-3{
 	height: 90%;
+	z-index: 10;
 }
-.service .info-1 .info-1-3 a{
+.info-1 .info-1-3 a{
 	margin: 53% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
 }
 
-.service .info-2{
-	position: relative;
-	/* top: 50%; */
-	margin: 0 0 0 7% ;
-	/* background: red; */
+.info-2{
+	/* position: relative;
+	margin: 0 0 0 7% ; */
 }
 
-.service .info-2 .info-1-1{
+.info-2 .info-1-1{
 	height: 100%;
+	z-index: 10;
 }
-.service .info-2 .info-1-1 img{
-	height: 50%;
-	width: 50%;
+.info-2 .info-1-1 img{
+	height: 30%;
+	width: 40%;
 }
-.service .info-2 .info-1-1 a{
+.info-2 .info-1-1 a{
 	margin: 2% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
 }
-.service .info-2 .info-1-2{
+.info-2 .info-1-2{
 	height: 100%;
+	z-index: 10;
 }
-.service .info-2 .info-1-2 a{
+.info-2 .info-1-2 a{
 	margin: 40% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
 }
-.service .info-2 .info-1-3{
+.info-2 .info-1-3{
 	height: 100%;
+	z-index: 10;
 }
-.service .info-2 .info-1-3 a{
+.info-2 .info-1-3 a{
 	margin: 30% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
 }
 
 .team{
 	margin: 100px;
 	z-index: 80;
-	/* width: 100%; */
 	height: 50%;
 
 }
@@ -542,11 +491,13 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html,body {
-	height: 100%;
+	height: auto;
 	width: auto;
+	margin: 0;
+	padding: 0;
     line-height: 1;
-    color: #ffffff;
-    background-color: #000000;
+    color: #dddada;
+    background-color: none;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -575,112 +526,125 @@ table {
 }
 
 header{
-	display: flex;
-	/* top: 0;
-	left: 0; */
-	/* width: auto; */
-	padding: 20px 30px 0 0;
-	/* z-index: 99; */
-	text-align: center;
-	/* background-color: aqua; */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 25px 0;
+	z-index: 99;
+
 }
 
-.krisfi{
-	float: left;
-	padding-top: 0px;
-	padding-bottom: 5px;
-	margin-left: 50px;
-	font-weight: bold;
-	font-size: 30px;
-	text-transform: uppercase;
-}
-
-.krisfi span{
-	color: crimson
-}
-
-
-header ul li{
-	/* position: relative;
-	left: auto; */
-	height:90px;
-	width: auto;
-	/* padding-right: 50px; */
-	/* padding-left: 0; */
-	margin-right: 30%;
-	margin-left: 40px;
-	font-weight: bold;
-	/* text-align: center; */
-	/* margin: 0 0 0 50px; */
-	/* background-color: red; */
-}
-
-/* header ul li a:last-child{
-	margin: 0;
-} */
-
-
-header ul li a{
-	/* float: right; */
-	/* position: relative; */
-	color: rgb(233, 233, 240);
-	/* width: auto;
-	height: auto; */
-	text-transform: uppercase;
-	/* text-decoration: none; */
-	/* text-align: left; */
-	/* margin-right: 40px;
-	padding-right: 50px; */
-	visibility: hidden;
-	/* background-color: yellow; */
+.nav-link.text-white{
+	color: black;
+	background-color: black;
 }
 
 .fixed {
+	height: 10%;
 	position: fixed;
-	width: 100%;
-	height: auto;
 	top: 0;
 	left: 0;
-	background-color: #000000;
-	z-index: 999;
+	background-color: black;
+	/* z-index: 99; */
+	opacity: 0.5
 }
 
 section{
-	/* padding: auto; */
-	height: auto;
-	width: auto;
+	padding: 20px 0;
+	height: 100%;
 	position: relative;
-	top: auto;
-	bottom: auto;
 }
 
 .home{
 	color: #ffffff;
-	/* padding: auto; */
+	/* padding: 30px; */
+	height: 2%;
 	text-align: center;
-	width: auto;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	background: url(../images/star.jpg);
-	background-size: fixed ;
-	background-position: auto;
+
+	background: url(https://cdn.pixabay.com/photo/2017/03/04/12/15/programming-2115930_960_720.jpg);
+	background-size: auto ;
+	background-position: center;
 	background-color: #34495e;
 	/* background-attachment: fixed; */
-	z-index: 9;
+
 }
 
 
-.home h1{
-	font-size: 68px;
-	text-transform: uppercase;
-	text-shadow: 0 15px 20px #000000b0;
-	margin-bottom: 0;
+.home .app{
+	background-color: rgb(185, 26, 26);
+	height: 140%;
+	width: 150px;
+	font-size: 9px;
+	/* opacity: 0.5; */
+	margin: 0 0 0 -120%;
+	color: black;
+	/* z-index: 99; */
 	visibility: hidden;
+	
 }
 
-.home h5{
+.home .app h2{
+	width: auto;
+	font-size: 10%;
+	font-weight: bold;
+	line-height: 1.5;
+	font-family: CrimsonText;
+	position: relative;
+	top: 20px;
+	
+}
+
+.home .app h3{
+	width: 100%;
+	margin-top: 2%;
+	font-size: 20px;
+	font-family: CrimsonText;
+	position: relative;
+	top: 30px;
+	left: 30px;
+}
+
+.home .app .bt a{
+		color: white;
+		text-decoration: none;
+}
+
+.home .app .bt{
+	color: rgb(226, 236, 226);
+	font-weight: bold;
+	font-size: 20px;
+	background-color: rgb(5, 41, 168);
+	margin: 8% 0 0 25%;
+	border-radius: 30px ;
+	border: 1px solid black;
+	font-family: CrimsonText;
+	height: 20%;
+	width: 50%;
+	text-align: center;
+	
+
+}
+
+.home .name{
+	position: relative;
+	top: 73px;
+	/* right: 60px; */
+	left: 0px;
+	/* background: red;  */
+	/* justify-content: center; */
+	/* backface-visibility: hidden; */
+}
+
+.name h1{
+	font-size: 68px;
+	text-shadow: 0 15px 20px #000000b0;
+	text-align: center;
+	margin-bottom: 0;
+
+}
+
+.name h5{
 	background: #000;
 	font-size: 18px;
 	text-align: center;
@@ -689,214 +653,199 @@ section{
 	display: inline-block;
 	letter-spacing: 2px;
 	border-radius: 2px;
-	visibility: hidden;
+
 }
 
-/* .section-title{
-	text-align: left;
-} */
-
-.section-title h2{
-	/* display: inline-block; */
-	font-size: 28px;
-	/* margin-top: 0; 
-	margin-bottom: 10px; */
-	border-bottom: 1px solid rgb(213, 213, 226);
-	text-transform: uppercase;
-	padding-bottom: 20px;
+.about .section-title{
+	margin: 2%;
+	font-size: 30px;
+	margin-left: 1.5%;
+	color: rgb(91, 122, 135);
 	text-align: center;
-	/* width: 100%; */
-	/* background-color: brown; */
+	
 }
+.about .section-title h2{
+	letter-spacing: 6px;
+	text-transform: capitalize;
+	color: orange;
+}
+
+.about .section-title p{
+	margin: 2% 0 0 20%;
+	line-height: 1.5;
+	font-size: 25px;
+	text-align: center;
+	width: 60%;
+	letter-spacing: 3px;
+}
+
 
 .about{
 	width: auto;
-	margin-bottom: auto;
-	height: auto;
-	/* background-color: red; */
+	margin-bottom: 0;
+	height: 70%;
 	
 }
 
 .about-info{
-	width: 100%;
+	width: 90%;
 	display: flex;
-	/* background-color: red; */
+	position: relative;
+	left: 20px;
+	top: 40px;
 }
 
-.gambar{
-	margin: 0 0 0 5px;
-	padding: 0 0 0 20px;
-	height: 100%;
-	/* background-color: red; */
+.about .gambar{
+	position: relative;
+	left: 100px;
 }
+
 .gambar img{
-	padding: 20px 30px 10px 0;
-	margin-right: 60px;
-	margin-left: 0;
-	width: 95%;
+	padding: 20px 0px 10px 0;
+	width: 90%;
+	height: 80%;
+
 }
-.content-about{
+.about .about-info .content-about{
 	float: left;
-	/* background-color: blue; */
 	margin: 0 10px 0 20px;
-	padding-right: 0;
 	padding-top: 10px;
 }
 
-.content-about p{
-	line-height: 28px;
-	font-size: 18px;
-	text-align: justify;
+.about .about-info .content-about p{
+	line-height: 45px;
 }
 
-.service{
-	width: auto;
-	height: auto;
-	/* text-align: center; */
-	/* margin-top: 500px; */
-	/* padding: 30px 0; */
 
+.info-1 .info-1-1{
+	height: 90%;	
 }
 
-.service .service-info{
-	width: 100%;
-	/* display: flex; */
-	margin-top: 0;
-	/* margin-left: 20px;
-	margin-right: 20px; */
-	/* text-align: center; */
+.info-1 .info-1-1 a{
+	margin: 2% 2% 0 0;
+	position: relative;
+	z-index: 99;
+	cursor: pointer;
 	
 }
+.info-1 .info-1-1 h6{
+	position: relative;
+	font-size: 15px;
+}
+.info-1 .info-1-2{
+	height: 100%;
+	z-index: 10;
+}
+.info-1 .info-1-2 a{
+	margin: 20% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
+}
+.info-1 .info-1-3{
+	height: 100%;
+	z-index: 10;
+}
+.info-1 .info-1-3 a{
+	margin: 53% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
+}
 
-.service-info .col{
-	/* margin-top: 0; */
-	/* margin: 0 20px 0 20px; */
+.info-2{
 	/* position: relative;
-	left: 20px;
-	right: 20px; */
-	/* height: auto; */
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-
+	margin: 0 0 0 7% ; */
 }
 
-.service-info .col img{
-	width: 100%;
-	/* height: 100%; */
-	/* position: relative;
-	right: 50%; */
-	/* height: auto; */
-	text-align: center;
-
+.info-2 .info-1-1{
+	height: 100%;
+	z-index: 10;
 }
-
-.col h3{
-	margin-top: 10px;
-	font-size: 28px;
-	text-align: center;
-	margin-bottom: 15px;
+.info-2 .info-1-1 img{
+	height: 30%;
+	width: 40%;
 }
-
-.col p{
-	line-height: 28px;
-	text-align: center;
+.info-2 .info-1-1 a{
+	margin: 2% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
+}
+.info-2 .info-1-2{
+	height: 100%;
+	z-index: 10;
+}
+.info-2 .info-1-2 a{
+	margin: 40% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
+}
+.info-2 .info-1-3{
+	height: 100%;
+	z-index: 10;
+}
+.info-2 .info-1-3 a{
+	margin: 30% 2% 0 0;
+	z-index: 99;
+	cursor: pointer;
 }
 
 .team{
-	margin-top: 0;
-	z-index: 99;
-	width: 100%;
-	height: auto;
-	font-style: oblique;
-	
+	margin: 100px;
+	z-index: 80;
+	height: 50%;
+
 }
+
+.team .title{
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: orange;
+}
+
 
 .swiper-container {
 	width: 100%;
-	padding-top: 50px;
+	padding-top: 10px;
 	padding-bottom: 50px;
-  }
+
+}
+
 .swiper-slide {
 	background-position: center;
 	background-size: cover;
 	width: 300px;
 	height: 320px;
-
-
+	
 }
 
-.info-image h3{
-	color: #fff;
-	margin-left: 20%;
+.swiper-slide .info-image{
+	position: relative;
+	left: 30px;
 }
-.info-image span{
-	font-size: 20px;
+.swiper-slide .info-image h3{
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .imgBx{
-
-	height: 250px;
+	height: 80%;
 	width: 250px;
 	padding-top: 20px;
 	padding-left: 20px;
 	margin-left: 15px;
 	margin-top: 10px;
 	float: center;
-	/* margin: 30px 3opx 30px 30px; */
-
 }
 
 .imgBx img{
-	/* margin: 20px 20px 20px 20px; */
-	margin-right: 30px;
-	margin-top: 0;
-	margin-bottom: 10px;
-	padding-top: 0 auto;
-	/* padding-right: 10px; */
 	height: 90%;
 	width: 90%;
-	position: center;
+
 }
 
-.contact{
-	width: 60%;
-	margin: 0 auto;
-	padding: 50px 0;
-	z-index: 99;
-}
+/* STYLES SPECIFIC TO FOOTER  */
 
-.contact-info{
-	display: flex;
-	justify-content: center;
-	margin: 50px 0;
-}
-
-.contact-info .textField{
-	width: 100%;
-	height: 50px;
-	border: 1px solid #fff;
-	box-sizing: border-box;
-	background-color: transparent;
-	padding: 15px 15px;
-	margin-bottom: 15px;
-	font-family: 'PT Sans Narrow', sans-serif;
-	color: #fff;
-	font-size: 16px;
-}
-
-.contact-info .messageField{
-	height: 250px; 
-}
-
-.contact-info .submitButton{
-	background-color:  #fff;
-	color: #000;
-	height: 50px;
-	font-weight: 600;
-	font-size: 16px;
-	cursor: pointer;
-	text-transform: uppercase;
-}
+.footer .col {
+	text-align: center;
 }
 
